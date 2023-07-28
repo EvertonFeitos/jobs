@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true">
+  <ion-grid style="height: 100%">
+    <ion-row
+      style="height: 100%"
+      class="ion-justify-content-center ion-align-items-center"
+    >
+      
+      <ion-card style="min-width: 300px">
+        <ion-card-header>
+          <ion-img src="../../assets/images/logo2.svg"></ion-img>
+        </ion-card-header>
+        <ion-card-content>
+          <form id="loginInicial">
+            <ion-col size="auto">
+              <ion-input
+                label="Usuário"
+                label-placement="floating"
+                fill="outline"
+                placeholder="Seu e-mail"
+              ></ion-input>
+              <ion-input
+                label="Senha"
+                label-placement="floating"
+                fill="outline"
+                placeholder="Senha"
+                type="password"
+              ></ion-input>
+              <ion-button expand="full" (click)="home()">Login</ion-button>
+            </ion-col>
+          </form>
+          <div class="ion-margin-top ion-margin-bottom ion-text-center">
+            <a (click)="goRegister()" style="cursor: pointer">ou crie sua conta</a>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+</ion-content>
