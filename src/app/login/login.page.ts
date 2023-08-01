@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
-import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-login',
@@ -13,8 +12,6 @@ import { environment } from 'src/environments/environment';
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class LoginPage implements OnInit {
-
-  public assets: string = environment.assets;
 
   constructor(private route:Router) { }
 

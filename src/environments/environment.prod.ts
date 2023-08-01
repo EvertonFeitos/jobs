@@ -1,4 +1,3 @@
 export const environment = {
-  production: true,
-  assets: 'docs/assets/'
+  production: true
 };
